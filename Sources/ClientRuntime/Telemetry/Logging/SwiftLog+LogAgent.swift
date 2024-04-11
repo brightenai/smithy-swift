@@ -13,7 +13,7 @@ public struct SwiftLogger: LogAgent {
     public init(label: String) {
         self.label = label
         self.logger = Logger(label: label)
-        self.logLevel = LogAgentLevel.info
+        self.logLevel = LogAgentLevel.error
     }
 
     public var level: LogAgentLevel {

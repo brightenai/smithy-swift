@@ -36,16 +36,16 @@ public struct SwiftLogger: LogAgent {
                     file: String,
                     function: String,
                     line: UInt) {
-        let mappedDict = metadata?.mapValues { (value) -> Logger.MetadataValue in
-            return Logger.MetadataValue.string(value)
-        }
-        self.logger.log(level: logLevel.toLoggerLevel(),
-                        Logger.Message(stringLiteral: message),
-                        metadata: mappedDict,
-                        source: source,
-                        file: file,
-                        function: function,
-                        line: line)
+        // let mappedDict = metadata?.mapValues { (value) -> Logger.MetadataValue in
+        //     return Logger.MetadataValue.string(value)
+        // }
+        // self.logger.log(level: logLevel.toLoggerLevel(),
+        //                 Logger.Message(stringLiteral: message),
+        //                 metadata: mappedDict,
+        //                 source: source,
+        //                 file: file,
+        //                 function: function,
+        //                 line: line)
     }
 }
 

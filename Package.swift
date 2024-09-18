@@ -34,7 +34,7 @@ let package = Package(
         .library(name: "SmithyTestUtil", targets: ["SmithyTestUtil"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/brightenai/aws-crt-swift", branch: "main"),
+        .package(url: "https://github.com/brightenai/aws-crt-swift", branch: "burkey-branch"),
         .package(url: "https://github.com/brightenai/swift-log.git", from: "1.0.0"),
     ],
     targets: [
